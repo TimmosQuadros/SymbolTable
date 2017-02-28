@@ -8,11 +8,11 @@ public class RBTree<Key extends Comparable<Key>,Value> implements SymbolTable<Ke
     
     //Binary search tree node class
     private class Node {
-        private Key key;           //key
-        private Value val;         //associated data
-        private Node left, right;  //links to left and right subtrees
-        private boolean color;     //color of parent link
-        private int size;          //subtree count
+        private Key key;
+        private Value val;
+        private Node left, right;
+        private boolean color;
+        private int size;
 
         public Node(Key key, Value val, boolean color, int size) {
             this.key = key;
@@ -132,6 +132,10 @@ public class RBTree<Key extends Comparable<Key>,Value> implements SymbolTable<Ke
             else if (cmp > 0) x = x.right;
             else              x.val=val; return;
         }
+    }
+    
+    public boolean contains(Key key) {
+        return get(key) != null;
     }
 
 	@Override

@@ -23,3 +23,6 @@ The linkedlist has O(n)
 The arrayList has O(n)
 The hashmap has O(log2(n))
 The rbTree has O(log3(n))
+
+Inspiration to R&Btree:
+Source: (http://algs4.cs.princeton.edu/33balanced/RedBlackBST.java.html)
